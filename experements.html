@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+        <head>
+          <style>
+                .window {
+                        border-radiues: 5px;
+                }
+          </style>
+          <title>jQuery UI Draggable - Default functionality</title>
+
+          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+          <script>
+                  $( function() {
+                    $( "#draggable" ).draggable();
+                  } );
+                  console.log (motionEvent.getY());
+          </script>
+
+        </head>
+        <body>
+                <div id="draggable" style="background: green; width: 150px; height: 150px;">
+                  drag me
+                </div>
+        </body>
+</html>
