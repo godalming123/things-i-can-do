@@ -11,7 +11,7 @@ def execCode(code, autoEscape = True):
         except Exception as e:
             print (e)
 
-def main () :
+def listenForCommands () :
     while not esc :
       try :
         execCode(input (": "))
@@ -20,4 +20,4 @@ def main () :
         print (e)
 
 if __name__ == "__main__" :
-    main ()
+    listenForCommands ()
